@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> L-P | Search </title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel = "stylesheet" href = "lp_styles.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/f115ae9379.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  		<a class="navbar-brand" href="lp_home.html">L<div class=yellow>-</div>P</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    		<div class="navbar-nav">
+      			<a class="nav-item nav-link" href="lp_home.html">playlists</a>
+      			<a class="nav-item nav-link" href="lp_about.html">about</a>
+			</div>
+		</div>
+</nav>
+
+<div class="jumbotron jumbotron-fluid">
+	<div class="container">
+		<h1 class="title">S E A R C H</h1>
+	</div>
+</div>
+
+<div class="container justify-content-center">
+	<div class="intro col-12 col-md-6 offset-md-3">
+		<p>Find the lyrics for your playlist and add them. Search form returns the first 15 results.</p>
+	</div>
+
+	<div class="row">
+		<form action="" method="" class="col-12" id="search-form">
+			<div class="form-row">
+				<div class="search-bar">
+					<label for="search-id" class="sr-only">Search:</label>
+					<input type="text" name="" class="form-control" id="search-id" placeholder="Song Title or Artist">
+				</div>
+				<div class="submit-search">
+					<button type="submit" class="btn yellow btn-block">Submit</button>
+				</div>
+			</div> <!-- .form-row -->
+		</form>
+		<div id="check-lyrics">
+		</div>
+		<ol class="col-12 col-md-8 offset-md-2">
+		</ol>
+	</div> <!-- .row -->
+</div>
+<br>
+<hr>
+<div class="footer-copyright text-center py-3">© 2019 Lyrical Playlists</div>
+
+<script
+  src="http://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script src="search_script.js"></script>
+
+</body>
+</html>

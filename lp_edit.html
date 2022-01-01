@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> L-P | Playlist </title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel = "stylesheet" href = "lp_styles.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/f115ae9379.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  		<a class="navbar-brand" href="lp_home.html">L<div class=yellow>-</div>P</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    		<div class="navbar-nav">
+      			<a class="nav-item nav-link" href="lp_home.html">playlists</a>
+      			<a class="nav-item nav-link" href="lp_about.html">about</a>
+			</div>
+		</div>
+</nav>
+
+<div class="jumbotron jumbotron-fluid">
+	<div class="container">
+		<h1 class="title">TEST PLAYLIST</h1>
+	</div>
+</div>
+
+<div class ="container">
+	<!-- Lyrics -->
+	<div id="lyric-preview">
+		LALALALALA
+		<br />
+		song song song
+		<br />
+		placeholder lyrics
+	</div>
+	<br/>
+	<br/>
+	<br/>
+	<!-- Add/Delete -->
+	<div class="row text-center">
+		<div id="search-btn" class="col-4">
+			<a href="lp_search.html" role="button" class="btn yellow">Add to Playlist</a>
+		</div>
+		<div id="edit-btn" class="col-4">
+			<a href="#" role="button" class="btn yellow">Edit Playlist Design</a>
+		</div>
+		<div id="delete-btn" class="col-4">
+			<a href="lp_delete.html" role="button" class="btn yellow">Delete from Playlist</a>
+		</div>
+	</div>
+	<div id="form-visible" class="display-none">
+		<form id="edit-form">
+			<div class="form-group">
+				<label for="lyric-font">Choose font:</label>
+				<select id="lyric-font" class="form-control">
+					<option value="Roboto">Roboto</option>
+					<option value="Arial">Arial</option>
+					<option value="Times New Roman">Times New Roman</option>
+					<option value="Verdana">Verdana</option>
+					<option value="Monospace">Monospace</option>
+				</select>
+			</div>
+			<div class="form-group">
+			    <label for="lyric-font-size">Choose font size:</label>
+				<input type="range" list="tickmarks" class="form-control-range" id="lyric-font-size" min="12" max="36" step="3">
+				<datalist id="tickmarks">
+					<option value="12" label="12px"></option>
+					<option value="15"></option>
+					<option value="18" label="18px"></option>
+					<option value="21"></option>
+					<option value="24" label="24px"></option>
+					<option value="27"></option>
+					<option value="30" label="30px"></option>
+					<option value="33"></option>
+					<option value="36" label="36px"></option>
+				</datalist>
+			</div>
+			<div class="form-group">
+				<label>Choose text color:</label>
+				<ul class="lyric-colors">
+					<li class="lyric-color selected" data-color="black"></li>
+					<li class="lyric-color" data-color="blue"></li>
+					<li class="lyric-color" data-color="green"></li>
+					<li class="lyric-color" data-color="red"></li>
+					<li class="lyric-color" data-color="yellow"></li>
+					<li class="lyric-color" data-color="orange"></li>
+				</ul>
+			</div>
+			<div id="save-btn" class="text-center">
+				<a href="#" role="button" class="btn">Save Edits</a>
+			</div>
+		</form>
+	</div>
+<br>
+<hr>
+<div class="footer-copyright text-center py-3">© 2019 Lyrical Playlists</div>
+
+<script
+  src="http://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script src="edit_script.js"></script>
+
+</body>
+</html>
